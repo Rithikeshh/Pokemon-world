@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pokemon-world/static/css/main.780972da.css",
+    "main.js": "/Pokemon-world/static/js/main.31f48e9f.js",
+    "static/js/787.f523a809.chunk.js": "/Pokemon-world/static/js/787.f523a809.chunk.js",
+    "index.html": "/Pokemon-world/index.html",
+    "main.780972da.css.map": "/Pokemon-world/static/css/main.780972da.css.map",
+    "main.31f48e9f.js.map": "/Pokemon-world/static/js/main.31f48e9f.js.map",
+    "787.f523a809.chunk.js.map": "/Pokemon-world/static/js/787.f523a809.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.780972da.css",
+    "static/js/main.31f48e9f.js"
+  ]
+}
