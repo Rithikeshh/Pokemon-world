@@ -1,4 +1,5 @@
 export default function Modal({pokemon,handleModel}){
+    
     return(
         <div className="modal" >
             <div className={`content ${pokemon.type}`}>
@@ -48,7 +49,7 @@ function Stats({pokemonStatsList}){
     return(
         <div className="pokemon-info--section">
             {pokemonStatsList.map((pokemonStat,index)=>( 
-                <div><strong>{`Stat${index+1}`}:</strong> {pokemonStat.stat.name}</div>
+                <div key={index}><strong>{`Stat${index+1}`}:</strong> {pokemonStat.stat.name}</div>
             ))}   
         </div>
     )
@@ -57,7 +58,7 @@ function BaseStats({pokemonStatsList}){
     return(
         <div className="pokemon-info--section">
             {pokemonStatsList.map((pokemonStat,index)=>( 
-                <div><strong>{`Bs${index+1}`}:</strong> {pokemonStat.base_stat}</div>
+                <div key={index}><strong>{`Bs${index+1}`}:</strong> {pokemonStat.base_stat}</div>
             ))}   
         </div>
     )
