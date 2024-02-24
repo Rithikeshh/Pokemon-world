@@ -1,10 +1,10 @@
 export default function Main({pokemonList, handleModel, handleSelectedPokemon}){
-
+    
     return (
         <div className="app-container">
             <div className="pokemon-container">
-                {pokemonList.map((pokemon,index)=>(
-                    <div key={pokemon.id} className={`card ${pokemon.type}`}>
+                {pokemonList.map((pokemon,index)=>{
+                    return <div key={pokemon.id} className={`card ${pokemon.type}`}>
                         <div className="number">{`#${pokemon.id}`}</div>
                         <img src={pokemon.image} alt={pokemon.name}/>
                         <div className="details">
@@ -19,7 +19,7 @@ export default function Main({pokemonList, handleModel, handleSelectedPokemon}){
                             }}>Know more...</button>
                         </div>
                     </div>
-                ))}
+                })}
             </div>
         </div>
     )
